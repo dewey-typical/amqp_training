@@ -7,9 +7,9 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 import java.util.Scanner;
 
 @SpringBootApplication
-public class Laucher {
+public class Launcher {
     public static void main(String[] args) {
-        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(Laucher.class);
+        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(Launcher.class);
         RabbitTemplate rabbitTemplate = context.getBean(RabbitTemplate.class);
         Scanner sc = new Scanner(System.in);
         while (true) {
